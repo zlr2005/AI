@@ -1,0 +1,9 @@
+﻿case,algorithm,order,depth,value,visited,expanded,generated,pruned_branches,median_ms,heuristic
+open_31,astar,fifo,,60,961,960,961,0,1.1563,zero
+open_31,astar,small_h,,60,961,960,961,0,1.15205,zero
+open_31,astar,fifo,,60,961,960,961,0,1.2401,manhattan
+open_31,astar,small_h,,60,61,60,119,0,0.12005,manhattan
+walls_31,astar,fifo,,340,661,660,661,0,0.71785,zero
+walls_31,astar,small_h,,340,661,660,661,0,0.72475,zero
+walls_31,astar,fifo,,340,658,657,661,0,0.7937,manhattan
+walls_31,astar,small_h,,340,657,656,801,0,1.1625,manhattan

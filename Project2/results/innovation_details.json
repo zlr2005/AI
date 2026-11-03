@@ -1,0 +1,2422 @@
+{
+  "metadata": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "repeats": 100,
+    "seed": 20261022,
+    "value_cases": 100,
+    "value_distribution": "T1,T2,T3,T4 依次独立均匀抽取 1..20 的整数",
+    "timing": "每配置预热一次，重复计时取中位数；不含距离预计算、输出和跟踪；包含排序",
+    "scope": "固定地图及宝藏位置，H=4，仅改变价值；不同地图与更多宝藏未在此验证",
+    "trace": "只记录非终止节点；returned_value 结合 result_kind 解释，可能仅为上下界"
+  },
+  "value_cases": [
+    {
+      "case": "value_001",
+      "values": {
+        "T1": 12,
+        "T2": 19,
+        "T3": 10,
+        "T4": 6
+      },
+      "comparison": "fewer",
+      "reference_value": 15
+    },
+    {
+      "case": "value_002",
+      "values": {
+        "T1": 2,
+        "T2": 8,
+        "T3": 8,
+        "T4": 8
+      },
+      "comparison": "fewer",
+      "reference_value": 6
+    },
+    {
+      "case": "value_003",
+      "values": {
+        "T1": 1,
+        "T2": 18,
+        "T3": 5,
+        "T4": 2
+      },
+      "comparison": "fewer",
+      "reference_value": 14
+    },
+    {
+      "case": "value_004",
+      "values": {
+        "T1": 7,
+        "T2": 7,
+        "T3": 10,
+        "T4": 20
+      },
+      "comparison": "fewer",
+      "reference_value": 6
+    },
+    {
+      "case": "value_005",
+      "values": {
+        "T1": 4,
+        "T2": 7,
+        "T3": 5,
+        "T4": 17
+      },
+      "comparison": "fewer",
+      "reference_value": 11
+    },
+    {
+      "case": "value_006",
+      "values": {
+        "T1": 4,
+        "T2": 7,
+        "T3": 19,
+        "T4": 15
+      },
+      "comparison": "fewer",
+      "reference_value": 15
+    },
+    {
+      "case": "value_007",
+      "values": {
+        "T1": 1,
+        "T2": 19,
+        "T3": 4,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 22
+    },
+    {
+      "case": "value_008",
+      "values": {
+        "T1": 5,
+        "T2": 19,
+        "T3": 12,
+        "T4": 16
+      },
+      "comparison": "fewer",
+      "reference_value": 18
+    },
+    {
+      "case": "value_009",
+      "values": {
+        "T1": 2,
+        "T2": 2,
+        "T3": 5,
+        "T4": 5
+      },
+      "comparison": "fewer",
+      "reference_value": 6
+    },
+    {
+      "case": "value_010",
+      "values": {
+        "T1": 15,
+        "T2": 3,
+        "T3": 4,
+        "T4": 19
+      },
+      "comparison": "fewer",
+      "reference_value": 5
+    },
+    {
+      "case": "value_011",
+      "values": {
+        "T1": 8,
+        "T2": 17,
+        "T3": 17,
+        "T4": 11
+      },
+      "comparison": "fewer",
+      "reference_value": 3
+    },
+    {
+      "case": "value_012",
+      "values": {
+        "T1": 4,
+        "T2": 6,
+        "T3": 14,
+        "T4": 20
+      },
+      "comparison": "fewer",
+      "reference_value": 8
+    },
+    {
+      "case": "value_013",
+      "values": {
+        "T1": 14,
+        "T2": 3,
+        "T3": 14,
+        "T4": 15
+      },
+      "comparison": "fewer",
+      "reference_value": 12
+    },
+    {
+      "case": "value_014",
+      "values": {
+        "T1": 2,
+        "T2": 5,
+        "T3": 13,
+        "T4": 17
+      },
+      "comparison": "fewer",
+      "reference_value": 7
+    },
+    {
+      "case": "value_015",
+      "values": {
+        "T1": 7,
+        "T2": 2,
+        "T3": 3,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 4
+    },
+    {
+      "case": "value_016",
+      "values": {
+        "T1": 4,
+        "T2": 10,
+        "T3": 17,
+        "T4": 7
+      },
+      "comparison": "fewer",
+      "reference_value": 10
+    },
+    {
+      "case": "value_017",
+      "values": {
+        "T1": 1,
+        "T2": 4,
+        "T3": 3,
+        "T4": 13
+      },
+      "comparison": "fewer",
+      "reference_value": 9
+    },
+    {
+      "case": "value_018",
+      "values": {
+        "T1": 8,
+        "T2": 19,
+        "T3": 16,
+        "T4": 16
+      },
+      "comparison": "fewer",
+      "reference_value": 11
+    },
+    {
+      "case": "value_019",
+      "values": {
+        "T1": 3,
+        "T2": 18,
+        "T3": 2,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 17
+    },
+    {
+      "case": "value_020",
+      "values": {
+        "T1": 2,
+        "T2": 19,
+        "T3": 13,
+        "T4": 1
+      },
+      "comparison": "fewer",
+      "reference_value": 7
+    },
+    {
+      "case": "value_021",
+      "values": {
+        "T1": 16,
+        "T2": 2,
+        "T3": 8,
+        "T4": 1
+      },
+      "comparison": "fewer",
+      "reference_value": 3
+    },
+    {
+      "case": "value_022",
+      "values": {
+        "T1": 6,
+        "T2": 10,
+        "T3": 17,
+        "T4": 17
+      },
+      "comparison": "fewer",
+      "reference_value": 12
+    },
+    {
+      "case": "value_023",
+      "values": {
+        "T1": 17,
+        "T2": 12,
+        "T3": 2,
+        "T4": 10
+      },
+      "comparison": "fewer",
+      "reference_value": 7
+    },
+    {
+      "case": "value_024",
+      "values": {
+        "T1": 15,
+        "T2": 1,
+        "T3": 4,
+        "T4": 1
+      },
+      "comparison": "fewer",
+      "reference_value": 5
+    },
+    {
+      "case": "value_025",
+      "values": {
+        "T1": 10,
+        "T2": 19,
+        "T3": 19,
+        "T4": 2
+      },
+      "comparison": "fewer",
+      "reference_value": 8
+    },
+    {
+      "case": "value_026",
+      "values": {
+        "T1": 2,
+        "T2": 17,
+        "T3": 1,
+        "T4": 13
+      },
+      "comparison": "fewer",
+      "reference_value": 15
+    },
+    {
+      "case": "value_027",
+      "values": {
+        "T1": 17,
+        "T2": 9,
+        "T3": 14,
+        "T4": 1
+      },
+      "comparison": "fewer",
+      "reference_value": 11
+    },
+    {
+      "case": "value_028",
+      "values": {
+        "T1": 15,
+        "T2": 11,
+        "T3": 7,
+        "T4": 11
+      },
+      "comparison": "fewer",
+      "reference_value": 4
+    },
+    {
+      "case": "value_029",
+      "values": {
+        "T1": 20,
+        "T2": 18,
+        "T3": 17,
+        "T4": 17
+      },
+      "comparison": "fewer",
+      "reference_value": 4
+    },
+    {
+      "case": "value_030",
+      "values": {
+        "T1": 16,
+        "T2": 9,
+        "T3": 9,
+        "T4": 11
+      },
+      "comparison": "fewer",
+      "reference_value": 1
+    },
+    {
+      "case": "value_031",
+      "values": {
+        "T1": 17,
+        "T2": 13,
+        "T3": 18,
+        "T4": 19
+      },
+      "comparison": "fewer",
+      "reference_value": 5
+    },
+    {
+      "case": "value_032",
+      "values": {
+        "T1": 12,
+        "T2": 12,
+        "T3": 6,
+        "T4": 5
+      },
+      "comparison": "fewer",
+      "reference_value": 11
+    },
+    {
+      "case": "value_033",
+      "values": {
+        "T1": 17,
+        "T2": 5,
+        "T3": 15,
+        "T4": 17
+      },
+      "comparison": "fewer",
+      "reference_value": 10
+    },
+    {
+      "case": "value_034",
+      "values": {
+        "T1": 10,
+        "T2": 15,
+        "T3": 5,
+        "T4": 1
+      },
+      "comparison": "fewer",
+      "reference_value": 19
+    },
+    {
+      "case": "value_035",
+      "values": {
+        "T1": 2,
+        "T2": 15,
+        "T3": 19,
+        "T4": 9
+      },
+      "comparison": "fewer",
+      "reference_value": 11
+    },
+    {
+      "case": "value_036",
+      "values": {
+        "T1": 18,
+        "T2": 17,
+        "T3": 8,
+        "T4": 4
+      },
+      "comparison": "fewer",
+      "reference_value": 13
+    },
+    {
+      "case": "value_037",
+      "values": {
+        "T1": 16,
+        "T2": 14,
+        "T3": 18,
+        "T4": 5
+      },
+      "comparison": "fewer",
+      "reference_value": 15
+    },
+    {
+      "case": "value_038",
+      "values": {
+        "T1": 5,
+        "T2": 16,
+        "T3": 8,
+        "T4": 19
+      },
+      "comparison": "fewer",
+      "reference_value": 12
+    },
+    {
+      "case": "value_039",
+      "values": {
+        "T1": 1,
+        "T2": 20,
+        "T3": 14,
+        "T4": 17
+      },
+      "comparison": "fewer",
+      "reference_value": 22
+    },
+    {
+      "case": "value_040",
+      "values": {
+        "T1": 19,
+        "T2": 12,
+        "T3": 3,
+        "T4": 6
+      },
+      "comparison": "equal",
+      "reference_value": 2
+    },
+    {
+      "case": "value_041",
+      "values": {
+        "T1": 13,
+        "T2": 11,
+        "T3": 2,
+        "T4": 11
+      },
+      "comparison": "fewer",
+      "reference_value": 11
+    },
+    {
+      "case": "value_042",
+      "values": {
+        "T1": 4,
+        "T2": 20,
+        "T3": 7,
+        "T4": 1
+      },
+      "comparison": "fewer",
+      "reference_value": 16
+    },
+    {
+      "case": "value_043",
+      "values": {
+        "T1": 9,
+        "T2": 12,
+        "T3": 13,
+        "T4": 20
+      },
+      "comparison": "fewer",
+      "reference_value": 8
+    },
+    {
+      "case": "value_044",
+      "values": {
+        "T1": 18,
+        "T2": 15,
+        "T3": 3,
+        "T4": 20
+      },
+      "comparison": "more",
+      "reference_value": 14
+    },
+    {
+      "case": "value_045",
+      "values": {
+        "T1": 20,
+        "T2": 1,
+        "T3": 5,
+        "T4": 8
+      },
+      "comparison": "fewer",
+      "reference_value": 10
+    },
+    {
+      "case": "value_046",
+      "values": {
+        "T1": 16,
+        "T2": 7,
+        "T3": 13,
+        "T4": 3
+      },
+      "comparison": "fewer",
+      "reference_value": 7
+    },
+    {
+      "case": "value_047",
+      "values": {
+        "T1": 4,
+        "T2": 7,
+        "T3": 16,
+        "T4": 8
+      },
+      "comparison": "fewer",
+      "reference_value": 13
+    },
+    {
+      "case": "value_048",
+      "values": {
+        "T1": 5,
+        "T2": 13,
+        "T3": 14,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 8
+    },
+    {
+      "case": "value_049",
+      "values": {
+        "T1": 6,
+        "T2": 13,
+        "T3": 11,
+        "T4": 20
+      },
+      "comparison": "fewer",
+      "reference_value": 12
+    },
+    {
+      "case": "value_050",
+      "values": {
+        "T1": 10,
+        "T2": 2,
+        "T3": 2,
+        "T4": 4
+      },
+      "comparison": "fewer",
+      "reference_value": 0
+    },
+    {
+      "case": "value_051",
+      "values": {
+        "T1": 15,
+        "T2": 17,
+        "T3": 8,
+        "T4": 16
+      },
+      "comparison": "fewer",
+      "reference_value": 10
+    },
+    {
+      "case": "value_052",
+      "values": {
+        "T1": 5,
+        "T2": 2,
+        "T3": 10,
+        "T4": 6
+      },
+      "comparison": "fewer",
+      "reference_value": 9
+    },
+    {
+      "case": "value_053",
+      "values": {
+        "T1": 16,
+        "T2": 16,
+        "T3": 14,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 6
+    },
+    {
+      "case": "value_054",
+      "values": {
+        "T1": 13,
+        "T2": 11,
+        "T3": 2,
+        "T4": 20
+      },
+      "comparison": "fewer",
+      "reference_value": 12
+    },
+    {
+      "case": "value_055",
+      "values": {
+        "T1": 8,
+        "T2": 18,
+        "T3": 5,
+        "T4": 18
+      },
+      "comparison": "fewer",
+      "reference_value": 9
+    },
+    {
+      "case": "value_056",
+      "values": {
+        "T1": 8,
+        "T2": 13,
+        "T3": 17,
+        "T4": 18
+      },
+      "comparison": "fewer",
+      "reference_value": 12
+    },
+    {
+      "case": "value_057",
+      "values": {
+        "T1": 15,
+        "T2": 3,
+        "T3": 13,
+        "T4": 17
+      },
+      "comparison": "fewer",
+      "reference_value": 10
+    },
+    {
+      "case": "value_058",
+      "values": {
+        "T1": 19,
+        "T2": 17,
+        "T3": 3,
+        "T4": 6
+      },
+      "comparison": "fewer",
+      "reference_value": 5
+    },
+    {
+      "case": "value_059",
+      "values": {
+        "T1": 3,
+        "T2": 3,
+        "T3": 19,
+        "T4": 15
+      },
+      "comparison": "fewer",
+      "reference_value": 12
+    },
+    {
+      "case": "value_060",
+      "values": {
+        "T1": 2,
+        "T2": 8,
+        "T3": 18,
+        "T4": 18
+      },
+      "comparison": "fewer",
+      "reference_value": 14
+    },
+    {
+      "case": "value_061",
+      "values": {
+        "T1": 10,
+        "T2": 6,
+        "T3": 19,
+        "T4": 11
+      },
+      "comparison": "fewer",
+      "reference_value": 14
+    },
+    {
+      "case": "value_062",
+      "values": {
+        "T1": 9,
+        "T2": 6,
+        "T3": 17,
+        "T4": 9
+      },
+      "comparison": "fewer",
+      "reference_value": 11
+    },
+    {
+      "case": "value_063",
+      "values": {
+        "T1": 19,
+        "T2": 12,
+        "T3": 2,
+        "T4": 2
+      },
+      "comparison": "equal",
+      "reference_value": 5
+    },
+    {
+      "case": "value_064",
+      "values": {
+        "T1": 18,
+        "T2": 18,
+        "T3": 9,
+        "T4": 8
+      },
+      "comparison": "fewer",
+      "reference_value": 11
+    },
+    {
+      "case": "value_065",
+      "values": {
+        "T1": 10,
+        "T2": 5,
+        "T3": 10,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 5
+    },
+    {
+      "case": "value_066",
+      "values": {
+        "T1": 12,
+        "T2": 3,
+        "T3": 5,
+        "T4": 20
+      },
+      "comparison": "fewer",
+      "reference_value": 10
+    },
+    {
+      "case": "value_067",
+      "values": {
+        "T1": 5,
+        "T2": 14,
+        "T3": 19,
+        "T4": 6
+      },
+      "comparison": "fewer",
+      "reference_value": 6
+    },
+    {
+      "case": "value_068",
+      "values": {
+        "T1": 10,
+        "T2": 15,
+        "T3": 11,
+        "T4": 13
+      },
+      "comparison": "fewer",
+      "reference_value": 7
+    },
+    {
+      "case": "value_069",
+      "values": {
+        "T1": 7,
+        "T2": 17,
+        "T3": 7,
+        "T4": 2
+      },
+      "comparison": "fewer",
+      "reference_value": 15
+    },
+    {
+      "case": "value_070",
+      "values": {
+        "T1": 7,
+        "T2": 4,
+        "T3": 19,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 12
+    },
+    {
+      "case": "value_071",
+      "values": {
+        "T1": 13,
+        "T2": 12,
+        "T3": 16,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 5
+    },
+    {
+      "case": "value_072",
+      "values": {
+        "T1": 5,
+        "T2": 11,
+        "T3": 20,
+        "T4": 7
+      },
+      "comparison": "fewer",
+      "reference_value": 11
+    },
+    {
+      "case": "value_073",
+      "values": {
+        "T1": 9,
+        "T2": 16,
+        "T3": 3,
+        "T4": 19
+      },
+      "comparison": "fewer",
+      "reference_value": 9
+    },
+    {
+      "case": "value_074",
+      "values": {
+        "T1": 20,
+        "T2": 12,
+        "T3": 4,
+        "T4": 20
+      },
+      "comparison": "fewer",
+      "reference_value": 8
+    },
+    {
+      "case": "value_075",
+      "values": {
+        "T1": 16,
+        "T2": 16,
+        "T3": 1,
+        "T4": 10
+      },
+      "comparison": "fewer",
+      "reference_value": 13
+    },
+    {
+      "case": "value_076",
+      "values": {
+        "T1": 10,
+        "T2": 4,
+        "T3": 11,
+        "T4": 18
+      },
+      "comparison": "fewer",
+      "reference_value": 3
+    },
+    {
+      "case": "value_077",
+      "values": {
+        "T1": 9,
+        "T2": 1,
+        "T3": 14,
+        "T4": 13
+      },
+      "comparison": "fewer",
+      "reference_value": 11
+    },
+    {
+      "case": "value_078",
+      "values": {
+        "T1": 9,
+        "T2": 2,
+        "T3": 10,
+        "T4": 4
+      },
+      "comparison": "fewer",
+      "reference_value": 5
+    },
+    {
+      "case": "value_079",
+      "values": {
+        "T1": 5,
+        "T2": 17,
+        "T3": 18,
+        "T4": 20
+      },
+      "comparison": "fewer",
+      "reference_value": 16
+    },
+    {
+      "case": "value_080",
+      "values": {
+        "T1": 5,
+        "T2": 5,
+        "T3": 4,
+        "T4": 2
+      },
+      "comparison": "fewer",
+      "reference_value": 4
+    },
+    {
+      "case": "value_081",
+      "values": {
+        "T1": 12,
+        "T2": 9,
+        "T3": 4,
+        "T4": 9
+      },
+      "comparison": "fewer",
+      "reference_value": 6
+    },
+    {
+      "case": "value_082",
+      "values": {
+        "T1": 10,
+        "T2": 19,
+        "T3": 18,
+        "T4": 19
+      },
+      "comparison": "fewer",
+      "reference_value": 10
+    },
+    {
+      "case": "value_083",
+      "values": {
+        "T1": 6,
+        "T2": 18,
+        "T3": 7,
+        "T4": 13
+      },
+      "comparison": "fewer",
+      "reference_value": 18
+    },
+    {
+      "case": "value_084",
+      "values": {
+        "T1": 1,
+        "T2": 12,
+        "T3": 4,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 15
+    },
+    {
+      "case": "value_085",
+      "values": {
+        "T1": 2,
+        "T2": 18,
+        "T3": 15,
+        "T4": 10
+      },
+      "comparison": "fewer",
+      "reference_value": 11
+    },
+    {
+      "case": "value_086",
+      "values": {
+        "T1": 6,
+        "T2": 11,
+        "T3": 12,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 7
+    },
+    {
+      "case": "value_087",
+      "values": {
+        "T1": 18,
+        "T2": 2,
+        "T3": 11,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 5
+    },
+    {
+      "case": "value_088",
+      "values": {
+        "T1": 16,
+        "T2": 2,
+        "T3": 4,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 6
+    },
+    {
+      "case": "value_089",
+      "values": {
+        "T1": 5,
+        "T2": 9,
+        "T3": 12,
+        "T4": 12
+      },
+      "comparison": "fewer",
+      "reference_value": 10
+    },
+    {
+      "case": "value_090",
+      "values": {
+        "T1": 8,
+        "T2": 11,
+        "T3": 3,
+        "T4": 2
+      },
+      "comparison": "fewer",
+      "reference_value": 14
+    },
+    {
+      "case": "value_091",
+      "values": {
+        "T1": 8,
+        "T2": 20,
+        "T3": 9,
+        "T4": 7
+      },
+      "comparison": "fewer",
+      "reference_value": 12
+    },
+    {
+      "case": "value_092",
+      "values": {
+        "T1": 3,
+        "T2": 10,
+        "T3": 17,
+        "T4": 2
+      },
+      "comparison": "fewer",
+      "reference_value": 8
+    },
+    {
+      "case": "value_093",
+      "values": {
+        "T1": 8,
+        "T2": 13,
+        "T3": 3,
+        "T4": 2
+      },
+      "comparison": "fewer",
+      "reference_value": 16
+    },
+    {
+      "case": "value_094",
+      "values": {
+        "T1": 11,
+        "T2": 6,
+        "T3": 4,
+        "T4": 1
+      },
+      "comparison": "fewer",
+      "reference_value": 8
+    },
+    {
+      "case": "value_095",
+      "values": {
+        "T1": 8,
+        "T2": 15,
+        "T3": 14,
+        "T4": 1
+      },
+      "comparison": "fewer",
+      "reference_value": 8
+    },
+    {
+      "case": "value_096",
+      "values": {
+        "T1": 17,
+        "T2": 2,
+        "T3": 2,
+        "T4": 11
+      },
+      "comparison": "fewer",
+      "reference_value": 6
+    },
+    {
+      "case": "value_097",
+      "values": {
+        "T1": 11,
+        "T2": 14,
+        "T3": 12,
+        "T4": 6
+      },
+      "comparison": "fewer",
+      "reference_value": 7
+    },
+    {
+      "case": "value_098",
+      "values": {
+        "T1": 9,
+        "T2": 19,
+        "T3": 8,
+        "T4": 10
+      },
+      "comparison": "fewer",
+      "reference_value": 12
+    },
+    {
+      "case": "value_099",
+      "values": {
+        "T1": 15,
+        "T2": 20,
+        "T3": 20,
+        "T4": 20
+      },
+      "comparison": "fewer",
+      "reference_value": 5
+    },
+    {
+      "case": "value_100",
+      "values": {
+        "T1": 17,
+        "T2": 14,
+        "T3": 18,
+        "T4": 10
+      },
+      "comparison": "fewer",
+      "reference_value": 11
+    }
+  ],
+  "sorting_summary": {
+    "comparison_counts": {
+      "fewer": 97,
+      "equal": 2,
+      "more": 1
+    },
+    "mean_visited_default": 47.5,
+    "mean_visited_gain": 32.86,
+    "reduction_of_mean_visited_pct": 30.82105263157895,
+    "median_of_case_median_ms_default": 0.07790000017848797,
+    "median_of_case_median_ms_gain": 0.06174999907671008,
+    "all_values_match_minimax": true
+  },
+  "sorting_failure": {
+    "case": "value_044",
+    "values": {
+      "T1": 18,
+      "T2": 15,
+      "T3": 3,
+      "T4": 20
+    },
+    "immediate_gain_a": {
+      "T1": 8,
+      "T2": 11,
+      "T3": -5,
+      "T4": 12
+    },
+    "exact_root_action_values": {
+      "T1": 8,
+      "T2": 14,
+      "T3": -12,
+      "T4": 10
+    },
+    "searches": {
+      "original": {
+        "decision": {
+          "best_target": "T2",
+          "best_value": 14
+        },
+        "visited": 41,
+        "trace": [
+          {
+            "path": [
+              "T1",
+              "T2",
+              "T3"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": "-inf",
+            "beta_in": "+inf",
+            "returned_value": -16,
+            "result_kind": "exact",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T1",
+              "T2",
+              "T4"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": -16,
+            "beta_in": "+inf",
+            "returned_value": 12,
+            "result_kind": "exact",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T1",
+              "T2"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": "-inf",
+            "beta_in": "+inf",
+            "returned_value": 12,
+            "result_kind": "exact",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T3",
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T1",
+              "T3",
+              "T2"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": "-inf",
+            "beta_in": 12,
+            "returned_value": 4,
+            "result_kind": "exact",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T1",
+              "T3",
+              "T4"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 4,
+            "beta_in": 12,
+            "returned_value": 8,
+            "result_kind": "exact",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T2"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T1",
+              "T3"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": "-inf",
+            "beta_in": 12,
+            "returned_value": 8,
+            "result_kind": "exact",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T2",
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T1",
+              "T4",
+              "T2"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": "-inf",
+            "beta_in": 8,
+            "returned_value": 10,
+            "result_kind": "lower_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T1",
+              "T4"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": "-inf",
+            "beta_in": 8,
+            "returned_value": 10,
+            "result_kind": "lower_bound",
+            "visited_subtree": 3,
+            "explored_targets": [
+              "T2"
+            ],
+            "skipped_targets": [
+              "T3"
+            ]
+          },
+          {
+            "path": [
+              "T1"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": "-inf",
+            "beta_in": "+inf",
+            "returned_value": 8,
+            "result_kind": "exact",
+            "visited_subtree": 14,
+            "explored_targets": [
+              "T2",
+              "T3",
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T1",
+              "T3"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 8,
+            "beta_in": "+inf",
+            "returned_value": -10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T1",
+              "T4"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 8,
+            "beta_in": "+inf",
+            "returned_value": 18,
+            "result_kind": "exact",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T1"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": 8,
+            "beta_in": "+inf",
+            "returned_value": 18,
+            "result_kind": "exact",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T3",
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T3",
+              "T1"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 8,
+            "beta_in": 18,
+            "returned_value": 10,
+            "result_kind": "exact",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T3",
+              "T4"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 10,
+            "beta_in": 18,
+            "returned_value": 14,
+            "result_kind": "exact",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T1"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T3"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": 8,
+            "beta_in": 18,
+            "returned_value": 14,
+            "result_kind": "exact",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T1",
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T4",
+              "T1"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 8,
+            "beta_in": 14,
+            "returned_value": 16,
+            "result_kind": "lower_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T4"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": 8,
+            "beta_in": 14,
+            "returned_value": 16,
+            "result_kind": "lower_bound",
+            "visited_subtree": 3,
+            "explored_targets": [
+              "T1"
+            ],
+            "skipped_targets": [
+              "T3"
+            ]
+          },
+          {
+            "path": [
+              "T2"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": 8,
+            "beta_in": "+inf",
+            "returned_value": 14,
+            "result_kind": "exact",
+            "visited_subtree": 14,
+            "explored_targets": [
+              "T1",
+              "T3",
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T3",
+              "T1",
+              "T2"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -14,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T3",
+              "T1",
+              "T4"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T2"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T3",
+              "T1"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T2",
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T3"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 6,
+            "explored_targets": [
+              "T1"
+            ],
+            "skipped_targets": [
+              "T2",
+              "T4"
+            ]
+          },
+          {
+            "path": [
+              "T4",
+              "T1",
+              "T2"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": 14,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T4",
+              "T1",
+              "T3"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T2"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T4",
+              "T1"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": 14,
+            "result_kind": "upper_bound",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T2",
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T4"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": 14,
+            "result_kind": "upper_bound",
+            "visited_subtree": 6,
+            "explored_targets": [
+              "T1"
+            ],
+            "skipped_targets": [
+              "T2",
+              "T3"
+            ]
+          },
+          {
+            "path": [],
+            "player": "A",
+            "remaining_depth": 4,
+            "alpha_in": "-inf",
+            "beta_in": "+inf",
+            "returned_value": 14,
+            "result_kind": "exact",
+            "visited_subtree": 41,
+            "explored_targets": [
+              "T1",
+              "T2",
+              "T3",
+              "T4"
+            ],
+            "skipped_targets": []
+          }
+        ],
+        "root_branches": [
+          {
+            "path": [
+              "T1"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": "-inf",
+            "beta_in": "+inf",
+            "returned_value": 8,
+            "result_kind": "exact",
+            "visited_subtree": 14,
+            "explored_targets": [
+              "T2",
+              "T3",
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": 8,
+            "beta_in": "+inf",
+            "returned_value": 14,
+            "result_kind": "exact",
+            "visited_subtree": 14,
+            "explored_targets": [
+              "T1",
+              "T3",
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T3"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 6,
+            "explored_targets": [
+              "T1"
+            ],
+            "skipped_targets": [
+              "T2",
+              "T4"
+            ]
+          },
+          {
+            "path": [
+              "T4"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": 14,
+            "result_kind": "upper_bound",
+            "visited_subtree": 6,
+            "explored_targets": [
+              "T1"
+            ],
+            "skipped_targets": [
+              "T2",
+              "T3"
+            ]
+          }
+        ]
+      },
+      "gain": {
+        "decision": {
+          "best_target": "T2",
+          "best_value": 14
+        },
+        "visited": 43,
+        "trace": [
+          {
+            "path": [
+              "T4",
+              "T1",
+              "T2"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": "-inf",
+            "beta_in": "+inf",
+            "returned_value": 14,
+            "result_kind": "exact",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T4",
+              "T1",
+              "T3"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T2"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T4",
+              "T1"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": "-inf",
+            "beta_in": "+inf",
+            "returned_value": 14,
+            "result_kind": "exact",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T2",
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T4",
+              "T2",
+              "T1"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": "-inf",
+            "beta_in": 14,
+            "returned_value": 14,
+            "result_kind": "lower_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T4",
+              "T2"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": "-inf",
+            "beta_in": 14,
+            "returned_value": 14,
+            "result_kind": "lower_bound",
+            "visited_subtree": 3,
+            "explored_targets": [
+              "T1"
+            ],
+            "skipped_targets": [
+              "T3"
+            ]
+          },
+          {
+            "path": [
+              "T4",
+              "T3",
+              "T2"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": "-inf",
+            "beta_in": 14,
+            "returned_value": 10,
+            "result_kind": "exact",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T1"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T4",
+              "T3",
+              "T1"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 10,
+            "beta_in": 14,
+            "returned_value": 10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T2"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T4",
+              "T3"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": "-inf",
+            "beta_in": 14,
+            "returned_value": 10,
+            "result_kind": "exact",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T2",
+              "T1"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T4"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": "-inf",
+            "beta_in": "+inf",
+            "returned_value": 10,
+            "result_kind": "exact",
+            "visited_subtree": 14,
+            "explored_targets": [
+              "T1",
+              "T2",
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T1",
+              "T4"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 10,
+            "beta_in": "+inf",
+            "returned_value": 18,
+            "result_kind": "exact",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T1",
+              "T3"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 18,
+            "beta_in": "+inf",
+            "returned_value": -10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T1"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": 10,
+            "beta_in": "+inf",
+            "returned_value": 18,
+            "result_kind": "exact",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T4",
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T4",
+              "T1"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 10,
+            "beta_in": 18,
+            "returned_value": 16,
+            "result_kind": "exact",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T4",
+              "T3"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 16,
+            "beta_in": 18,
+            "returned_value": -8,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T1"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T4"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": 10,
+            "beta_in": 18,
+            "returned_value": 16,
+            "result_kind": "exact",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T1",
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T3",
+              "T4"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 10,
+            "beta_in": 16,
+            "returned_value": 14,
+            "result_kind": "exact",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T1"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T3",
+              "T1"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 14,
+            "beta_in": 16,
+            "returned_value": 10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2",
+              "T3"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": 10,
+            "beta_in": 16,
+            "returned_value": 14,
+            "result_kind": "exact",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T4",
+              "T1"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": 10,
+            "beta_in": "+inf",
+            "returned_value": 14,
+            "result_kind": "exact",
+            "visited_subtree": 16,
+            "explored_targets": [
+              "T1",
+              "T4",
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T1",
+              "T4",
+              "T2"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": 10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T1",
+              "T4",
+              "T3"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -14,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T2"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T1",
+              "T4"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": 10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T2",
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T1"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": 10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 6,
+            "explored_targets": [
+              "T4"
+            ],
+            "skipped_targets": [
+              "T2",
+              "T3"
+            ]
+          },
+          {
+            "path": [
+              "T3",
+              "T1",
+              "T4"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T2"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T3",
+              "T1",
+              "T2"
+            ],
+            "player": "B",
+            "remaining_depth": 1,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -14,
+            "result_kind": "upper_bound",
+            "visited_subtree": 2,
+            "explored_targets": [
+              "T4"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T3",
+              "T1"
+            ],
+            "player": "A",
+            "remaining_depth": 2,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 5,
+            "explored_targets": [
+              "T4",
+              "T2"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T3"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 6,
+            "explored_targets": [
+              "T1"
+            ],
+            "skipped_targets": [
+              "T4",
+              "T2"
+            ]
+          },
+          {
+            "path": [],
+            "player": "A",
+            "remaining_depth": 4,
+            "alpha_in": "-inf",
+            "beta_in": "+inf",
+            "returned_value": 14,
+            "result_kind": "exact",
+            "visited_subtree": 43,
+            "explored_targets": [
+              "T4",
+              "T2",
+              "T1",
+              "T3"
+            ],
+            "skipped_targets": []
+          }
+        ],
+        "root_branches": [
+          {
+            "path": [
+              "T4"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": "-inf",
+            "beta_in": "+inf",
+            "returned_value": 10,
+            "result_kind": "exact",
+            "visited_subtree": 14,
+            "explored_targets": [
+              "T1",
+              "T2",
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T2"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": 10,
+            "beta_in": "+inf",
+            "returned_value": 14,
+            "result_kind": "exact",
+            "visited_subtree": 16,
+            "explored_targets": [
+              "T1",
+              "T4",
+              "T3"
+            ],
+            "skipped_targets": []
+          },
+          {
+            "path": [
+              "T1"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": 10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 6,
+            "explored_targets": [
+              "T4"
+            ],
+            "skipped_targets": [
+              "T2",
+              "T3"
+            ]
+          },
+          {
+            "path": [
+              "T3"
+            ],
+            "player": "B",
+            "remaining_depth": 3,
+            "alpha_in": 14,
+            "beta_in": "+inf",
+            "returned_value": -10,
+            "result_kind": "upper_bound",
+            "visited_subtree": 6,
+            "explored_targets": [
+              "T1"
+            ],
+            "skipped_targets": [
+              "T4",
+              "T2"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "tie_break_ablation": [
+    {
+      "case": "open_31",
+      "algorithm": "astar",
+      "order": "fifo",
+      "depth": "",
+      "value": 60,
+      "visited": 961,
+      "expanded": 960,
+      "generated": 961,
+      "pruned_branches": 0,
+      "median_ms": 1.1563,
+      "heuristic": "zero"
+    },
+    {
+      "case": "open_31",
+      "algorithm": "astar",
+      "order": "small_h",
+      "depth": "",
+      "value": 60,
+      "visited": 961,
+      "expanded": 960,
+      "generated": 961,
+      "pruned_branches": 0,
+      "median_ms": 1.15205,
+      "heuristic": "zero"
+    },
+    {
+      "case": "open_31",
+      "algorithm": "astar",
+      "order": "fifo",
+      "depth": "",
+      "value": 60,
+      "visited": 961,
+      "expanded": 960,
+      "generated": 961,
+      "pruned_branches": 0,
+      "median_ms": 1.2401,
+      "heuristic": "manhattan"
+    },
+    {
+      "case": "open_31",
+      "algorithm": "astar",
+      "order": "small_h",
+      "depth": "",
+      "value": 60,
+      "visited": 61,
+      "expanded": 60,
+      "generated": 119,
+      "pruned_branches": 0,
+      "median_ms": 0.12005,
+      "heuristic": "manhattan"
+    },
+    {
+      "case": "walls_31",
+      "algorithm": "astar",
+      "order": "fifo",
+      "depth": "",
+      "value": 340,
+      "visited": 661,
+      "expanded": 660,
+      "generated": 661,
+      "pruned_branches": 0,
+      "median_ms": 0.71785,
+      "heuristic": "zero"
+    },
+    {
+      "case": "walls_31",
+      "algorithm": "astar",
+      "order": "small_h",
+      "depth": "",
+      "value": 340,
+      "visited": 661,
+      "expanded": 660,
+      "generated": 661,
+      "pruned_branches": 0,
+      "median_ms": 0.72475,
+      "heuristic": "zero"
+    },
+    {
+      "case": "walls_31",
+      "algorithm": "astar",
+      "order": "fifo",
+      "depth": "",
+      "value": 340,
+      "visited": 658,
+      "expanded": 657,
+      "generated": 661,
+      "pruned_branches": 0,
+      "median_ms": 0.7937,
+      "heuristic": "manhattan"
+    },
+    {
+      "case": "walls_31",
+      "algorithm": "astar",
+      "order": "small_h",
+      "depth": "",
+      "value": 340,
+      "visited": 657,
+      "expanded": 656,
+      "generated": 801,
+      "pruned_branches": 0,
+      "median_ms": 1.1625,
+      "heuristic": "manhattan"
+    }
+  ]
+}
